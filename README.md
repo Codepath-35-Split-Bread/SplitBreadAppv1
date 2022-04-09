@@ -112,16 +112,15 @@ SplitBread is the easiest way to share expenses with friends and family and stop
 * Account Screen => None
 
 ## Wireframes
-[Add picture of your hand sketched wireframes in this section]
-<img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+
+<img src="https://github.com/jonathanpearson876/SplitBreadApp/blob/main/AddImages/image0%20(1).jpeg" width=600>
 
 ### [BONUS] Digital Wireframes & Mockups
-<img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
-<img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
-<img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
-<img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
-<img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
-<img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+<img src="https://github.com/jonathanpearson876/SplitBreadApp/blob/main/AddImages/SplitBread1.PNG" width=600>
+<img src="https://github.com/jonathanpearson876/SplitBreadApp/blob/main/AddImages/SplitBread2.PNG" width=600>
+<img src="https://github.com/jonathanpearson876/SplitBreadApp/blob/main/AddImages/SplitBread3.PNG" width=600>
+<img src="https://github.com/jonathanpearson876/SplitBreadApp/blob/main/AddImages/SplitBread4.PNG" width=600>
+<img src="https://github.com/jonathanpearson876/SplitBreadApp/blob/main/AddImages/SplitBread5.PNG" width=600>
 
 ### [BONUS] Interactive Prototype
 
