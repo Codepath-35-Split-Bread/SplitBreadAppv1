@@ -1,0 +1,24 @@
+package com.example.splitbread
+
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import android.widget.Button
+import android.widget.Toast
+
+class LandingPage : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_landing_page)
+
+        val btnLgn = findViewById<Button>(R.id.btnLgn)
+        val btnSign = findViewById<Button>(R.id.btnSign)
+
+        btnLgn.setOnClickListener{
+            Toast.makeText(this,"Login Button", Toast.LENGTH_SHORT).show()
+        }
+
+        btnSign.setOnClickListener{
+            Toast.makeText(this,"Sign Up Button", Toast.LENGTH_SHORT).show()
+        }
+    }
+}
