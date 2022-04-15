@@ -9,6 +9,7 @@ import android.widget.EditText
 import android.widget.Toast
 import com.parse.ParseUser
 
+
 class SignupActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
