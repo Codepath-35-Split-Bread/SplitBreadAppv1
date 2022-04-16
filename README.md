@@ -28,20 +28,20 @@ SplitBread is the easiest way to share expenses with friends and family and stop
 
 **Required Must-have Stories**
 
-[x] User can create an account
-[x] User can log in
-* User can add people
-* Users can create a group, and invite others to join 
-* User can request payment from people
-* User can clarify on requested payment(Reason, description, date, etc.)
-* User can verify paying requested payment
-* User can verify recieved payments
+- [x] User can create an account
+- [x] User can log in
+- [ ] User can add people
+- [ ] Users can create a group, and invite others to join 
+- [ ] User can request payment from people
+- [ ] User can clarify on requested payment(Reason, description, date, etc.)
+- [ ] User can verify paying requested payment
+- [ ] User can verify recieved payments
 
 **Optional Nice-to-have Stories**
 
-* User can upload bill
-* User can be notified of finalized payments
-* User can see how much money they paid and received
+- [ ] User can upload bill
+- [ ] User can be notified of finalized payments
+- [ ] User can see how much money they paid and received
 
 ### 2. Screen Archetypes
 
