@@ -111,6 +111,10 @@ SplitBread is the easiest way to share expenses with friends and family and stop
 * Recent Activity Screen => None
 * Account Screen => None
 
+## DEMO GIF (April 16, 2022)
+
+<img src='SplitBread.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
 ## Wireframes
 
 <img src="https://github.com/jonathanpearson876/SplitBreadApp/blob/main/AddImages/image0%20(1).jpeg" width=600>
