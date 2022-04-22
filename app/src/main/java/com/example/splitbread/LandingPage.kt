@@ -1,5 +1,6 @@
 package com.example.splitbread
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -13,12 +14,21 @@ class LandingPage : AppCompatActivity() {
         val btnLgn = findViewById<Button>(R.id.btnLgn)
         val btnSign = findViewById<Button>(R.id.btnSign)
 
-        btnLgn.setOnClickListener{
-            Toast.makeText(this,"Login Button", Toast.LENGTH_SHORT).show()
+        btnLgn.setOnClickListener {
+            startActivity(Intent(this, LoginActivity::class.java))
         }
 
         btnSign.setOnClickListener{
-            Toast.makeText(this,"Sign Up Button", Toast.LENGTH_SHORT).show()
+            startActivity(Intent(this,SignupActivity::class.java))
+
+
+//        btnLgn.setOnClickListener{
+//            Toast.makeText(this,"Login Button", Toast.LENGTH_SHORT).show()
+//        }
+//
+//        btnSign.setOnClickListener{
+//            Toast.makeText(this,"Sign Up Button", Toast.LENGTH_SHORT).show()
         }
     }
+
 }
