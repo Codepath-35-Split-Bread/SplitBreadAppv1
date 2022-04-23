@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.EditText
+import android.widget.Toast
 
 class AddExpenseActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,19 +24,27 @@ class AddExpenseActivity : AppCompatActivity() {
 
     // add expense for friends??
 
-    private fun addExpense(description: String, amount: Int){
+    private fun addExpense(description: String, amount: Int) {
         val group = Groups()
 
         group.setDescription(description)
         group.setExpense(amount)
 
-        Log.i(SignupActivity.TAG, "Expense Added")
-        goToMainActivity()
-    }
 
-    private fun goToMainActivity() {
-        val intent = Intent(this@AddExpenseActivity, MainActivity::class.java)
-        startActivity(intent)
-        finish()
+        group.saveInBackground { exception ->
+            if (exception != null) {
+                Log.e(StartGroupActivity.TAG, "Error while saving")
+                exception.printStackTrace()
+                Toast.makeText(this, "Error saving", Toast.LENGTH_SHORT).show()
+            } else {
+                Log.i(SignupActivity.TAG, "Expense Added")
+                goToMainActivity()
+            }
+        }
     }
+        private fun goToMainActivity() {
+            val intent = Intent(this@AddExpenseActivity, MainActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
 }

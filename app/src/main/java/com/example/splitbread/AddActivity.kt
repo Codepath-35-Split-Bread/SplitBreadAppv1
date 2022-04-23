@@ -7,6 +7,7 @@ import android.os.PersistableBundle
 import android.util.Log
 import android.view.View
 import android.widget.Button
+import android.widget.EditText
 import android.widget.TextView
 import androidx.core.content.ContentProviderCompat.requireContext
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -39,7 +40,17 @@ class AddActivity : AppCompatActivity() {
             goToAddExpenseActivity()
         }
 
+        findViewById<Button>(R.id.addgroupbutton).setOnClickListener{
+            goToStartGroupActivity()
+        }
 
+        findViewById<Button>(R.id.addfriendbutton).setOnClickListener{
+            goToAddFriendsActivity()
+        }
+
+        findViewById<Button>(R.id.canceladd).setOnClickListener{
+            goToMainActivity()
+        }
     }
 
     override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
@@ -130,11 +141,23 @@ class AddActivity : AppCompatActivity() {
         finish()
     }
 
-/*    private fun goToAddExpenseActivity() {
-        val intent = Intent(this@AddActivity, AddExpenseActivity::class.java)
+    private fun goToStartGroupActivity() {
+        val intent = Intent(this@AddActivity, StartGroupActivity::class.java)
         startActivity(intent)
         finish()
-    }*/
+    }
+
+    private fun goToAddFriendsActivity() {
+        val intent = Intent(this@AddActivity, AddFriendsActivity::class.java)
+        startActivity(intent)
+        finish()
+    }
+
+    private fun goToMainActivity() {
+        val intent = Intent(this@AddActivity, MainActivity::class.java)
+        startActivity(intent)
+        finish()
+    }
 
     companion object{
         const val TAG = "AddActivity"

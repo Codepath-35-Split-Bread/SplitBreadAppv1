@@ -58,7 +58,7 @@
         app:layout_constraintTop_toBottomOf="@+id/friends_title" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/addgroupbutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="ADD GROUP"
@@ -68,7 +68,7 @@
         app:layout_constraintTop_toBottomOf="@+id/groups_recyclerView" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/addfriendbutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="ADD FIRIEND"
