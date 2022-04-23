@@ -3,8 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/jonny/AndroidStudioProjects/SplitBreadAppv1/app/src/main/res/layout/activity_landing_page.xml" value="0.264" />
-        <entry key="..\:/Users/jonny/AndroidStudioProjects/SplitBreadAppv1/app/src/main/res/layout/activity_signup.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/abuba/AndroidStudioProjects/SplitBreadAppv1/app/src/main/res/layout/activity_add.xml" value="0.290625" />
+        <entry key="..\:/Users/abuba/AndroidStudioProjects/SplitBreadAppv1/app/src/main/res/layout/activity_add_expense.xml" value="0.290625" />
+        <entry key="..\:/Users/abuba/AndroidStudioProjects/SplitBreadAppv1/app/src/main/res/layout/activity_add_friends.xml" value="0.290625" />
+        <entry key="..\:/Users/abuba/AndroidStudioProjects/SplitBreadAppv1/app/src/main/res/layout/activity_friends.xml" value="0.290625" />
+        <entry key="..\:/Users/abuba/AndroidStudioProjects/SplitBreadAppv1/app/src/main/res/layout/activity_groups.xml" value="0.290625" />
+        <entry key="..\:/Users/abuba/AndroidStudioProjects/SplitBreadAppv1/app/src/main/res/layout/activity_main.xml" value="0.290625" />
+        <entry key="..\:/Users/abuba/AndroidStudioProjects/SplitBreadAppv1/app/src/main/res/layout/activity_signup.xml" value="0.290625" />
+        <entry key="..\:/Users/abuba/AndroidStudioProjects/SplitBreadAppv1/app/src/main/res/layout/activity_start_group.xml" value="0.290625" />
+        <entry key="..\:/Users/abuba/AndroidStudioProjects/SplitBreadAppv1/app/src/main/res/layout/friends.xml" value="0.290625" />
+        <entry key="..\:/Users/abuba/AndroidStudioProjects/SplitBreadAppv1/app/src/main/res/layout/groups.xml" value="0.290625" />
+        <entry key="..\:/Users/abuba/AndroidStudioProjects/SplitBreadAppv1/app/src/main/res/layout/iteam_friends.xml" value="0.290625" />
+        <entry key="..\:/Users/abuba/AndroidStudioProjects/SplitBreadAppv1/app/src/main/res/layout/item_groups.xml" value="0.290625" />
       </map>
     </option>
   </component>
