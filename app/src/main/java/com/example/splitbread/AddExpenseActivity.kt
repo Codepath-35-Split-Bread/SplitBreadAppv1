@@ -46,6 +46,7 @@ class AddExpenseActivity : AppCompatActivity() {
             }
         }
     }
+
         private fun goToMainActivity() {
             val intent = Intent(this@AddExpenseActivity, MainActivity::class.java)
             startActivity(intent)
