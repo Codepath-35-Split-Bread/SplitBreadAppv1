@@ -30,8 +30,8 @@ SplitBread is the easiest way to share expenses with friends and family and stop
 
 - [x] User can create an account
 - [x] User can log in
-- [ ] User can add people
-- [ ] Users can create a group, and invite others to join 
+- [x] User can add people
+- [x] Users can create a group, and invite others to join 
 - [ ] User can request payment from people
 - [ ] User can clarify on requested payment(Reason, description, date, etc.)
 - [ ] User can verify paying requested payment
