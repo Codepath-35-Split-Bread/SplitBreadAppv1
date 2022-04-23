@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/friends"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:title="Friends" />
+
+    <item
+        android:id="@+id/groups"
+        android:icon="@drawable/ic_baseline_group_24"
+        android:title="Groups" />
+
+    <item
+        android:id="@+id/add"
+        android:icon="@drawable/ic_baseline_add_circle_24"
+        android:title="Add" />
+
+    <item
+        android:id="@+id/activity"
+        android:icon="@drawable/ic_baseline_notifications_active_24"
+        android:title="Activity" />
+
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/ic_baseline_account_circle_24"
+        android:title="Profile" />
+
+</menu>

@@ -8,11 +8,15 @@
         <entry key="..\:/Users/idbar/AndroidStudioProjects/SplitBreadAppv1/app/src/main/res/layout/activity_add_friends.xml" value="0.165625" />
         <entry key="..\:/Users/idbar/AndroidStudioProjects/SplitBreadAppv1/app/src/main/res/layout/activity_landing_page.xml" value="0.1" />
         <entry key="..\:/Users/idbar/AndroidStudioProjects/SplitBreadAppv1/app/src/main/res/layout/activity_login.xml" value="0.1" />
+        <entry key="..\:/Users/idbar/AndroidStudioProjects/SplitBreadAppv1/app/src/main/res/layout/activity_main.xml" value="0.1796875" />
         <entry key="..\:/Users/idbar/AndroidStudioProjects/SplitBreadAppv1/app/src/main/res/layout/activity_signup.xml" value="0.1" />
         <entry key="..\:/Users/idbar/AndroidStudioProjects/SplitBreadAppv1/app/src/main/res/layout/activity_start_group.xml" value="0.165625" />
+        <entry key="..\:/Users/idbar/AndroidStudioProjects/SplitBreadAppv1/app/src/main/res/layout/fragment_friends.xml" value="0.1796875" />
         <entry key="..\:/Users/idbar/AndroidStudioProjects/SplitBreadAppv1/app/src/main/res/layout/fragment_groups.xml" value="0.1796875" />
         <entry key="..\:/Users/idbar/AndroidStudioProjects/SplitBreadAppv1/app/src/main/res/layout/friends.xml" value="0.1796875" />
         <entry key="..\:/Users/idbar/AndroidStudioProjects/SplitBreadAppv1/app/src/main/res/layout/groups.xml" value="0.1796875" />
+        <entry key="..\:/Users/idbar/AndroidStudioProjects/SplitBreadAppv1/app/src/main/res/layout/item_groups.xml" value="0.1796875" />
+        <entry key="..\:/Users/idbar/AndroidStudioProjects/SplitBreadAppv1/app/src/main/res/menu/menu_bottom_navigation.xml" value="0.1796875" />
       </map>
     </option>
   </component>

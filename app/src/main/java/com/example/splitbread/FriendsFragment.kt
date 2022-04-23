@@ -13,7 +13,7 @@ import com.parse.ParseException
 import com.parse.ParseQuery
 import com.parse.ParseUser
 
-class GroupsFragment : Fragment() {
+class FriendsFragment : Fragment() {
 
     lateinit var groupsRecyclerView: RecyclerView
 
@@ -34,7 +34,7 @@ class GroupsFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         // set up views and click listeners
 
-        groupsRecyclerView = view.findViewById(R.id.groupsrecyclerView)
+        groupsRecyclerView = view.findViewById(R.id.groupsRecyclerView)
 
         adapter = GroupFragAdapter(requireContext(), allGroups as ArrayList<Groups>)
         groupsRecyclerView.adapter = adapter
@@ -44,7 +44,7 @@ class GroupsFragment : Fragment() {
     }
 
     open fun queryGroups() {
-        // TODO: Add Description and Image
+
         // Specify which class to query
         val query: ParseQuery<Groups> = ParseQuery.getQuery(Groups::class.java)
 

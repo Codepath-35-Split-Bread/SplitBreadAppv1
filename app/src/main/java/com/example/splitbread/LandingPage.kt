@@ -10,29 +10,18 @@ class LandingPage : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_landing_page)
-/*
+
         val btnLgn = findViewById<Button>(R.id.btnLgn)
-        val btnSign = findViewById<Button>(R.id.btnSign)*/
+        val btnSign = findViewById<Button>(R.id.btnSign)
 
-        findViewById<Button>(R.id.btnLgn).setOnClickListener{
-            goLoginActivity()
+        btnLgn.setOnClickListener{
+            startActivity(Intent(this,LoginActivity::class.java))
         }
 
-        findViewById<Button>(R.id.btnSign).setOnClickListener{
-            goSignupActivity()
+        btnSign.setOnClickListener{
+            startActivity(Intent(this,SignupActivity::class.java))
         }
-    }
-
-    private fun goLoginActivity() {
-        val intent = Intent(this@LandingPage, LoginActivity::class.java)
-        startActivity(intent)
-        finish()
-    }
-
-    private fun goSignupActivity() {
-        val intent = Intent(this@LandingPage, SignupActivity::class.java)
-        startActivity(intent)
-        finish()
     }
 }
+
 
