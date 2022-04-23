@@ -20,6 +20,10 @@ class AddExpenseActivity : AppCompatActivity() {
 
             addExpense(description, amount)
         }
+
+        findViewById<Button>(R.id.canceladdExpense).setOnClickListener{
+            goToMainActivity()
+        }
     }
 
     // add expense for friends??

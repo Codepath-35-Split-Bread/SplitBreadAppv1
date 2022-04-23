@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
 import android.widget.Toast
@@ -18,6 +19,10 @@ class AddFriendsActivity : AppCompatActivity() {
             val friendName = findViewById<EditText>(R.id.friendinput).text.toString()
 
             addFriend(friendName)
+        }
+
+        findViewById<Button>(R.id.canceladdfriend).setOnClickListener{
+            goToMainActivity()
         }
     }
 
@@ -36,6 +41,12 @@ class AddFriendsActivity : AppCompatActivity() {
                 goToAddExpenseActivity()
             }
         }
+    }
+
+    private fun goToMainActivity() {
+        val intent = Intent(this@AddFriendsActivity, MainActivity::class.java)
+        startActivity(intent)
+        finish()
     }
 
     private fun goToAddExpenseActivity() {
