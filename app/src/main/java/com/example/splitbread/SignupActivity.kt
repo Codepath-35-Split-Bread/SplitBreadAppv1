@@ -49,7 +49,7 @@ class SignupActivity : AppCompatActivity() {
             if (e == null) {
                 // Successful signup
                 Log.i(TAG, "Successfully Signed up user.")
-                goToMainActivity()
+                goToNextActivity()
                 Toast.makeText(this, "Successfully signed up", Toast.LENGTH_SHORT).show()
             } else {
                 e.printStackTrace()
@@ -71,7 +71,7 @@ class SignupActivity : AppCompatActivity() {
             if (e == null) {
                 // Successful signup
                 Log.i(TAG, "Successfully Signed up user.")
-                goToMainActivity()
+                goToNextActivity()
                 Toast.makeText(this, "Successfully signed up", Toast.LENGTH_SHORT).show()
             } else {
                 e.printStackTrace()
@@ -80,7 +80,7 @@ class SignupActivity : AppCompatActivity() {
         }
     }
 
-    private fun goToMainActivity() {
+    private fun goToNextActivity() {
         val intent = Intent(this@SignupActivity, MainActivity::class.java)
         startActivity(intent)
         finish()

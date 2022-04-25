@@ -1,14 +1,15 @@
 package com.example.splitbread
 
+import android.app.PendingIntent.getActivity
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
-import com.parse.ParseUser
+import androidx.appcompat.app.AppCompatActivity
+import com.parse.*
+import java.security.AccessController.getContext
 
 class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -39,9 +40,14 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun goToMainActivity() {
-        val intent = Intent(this@LoginActivity, MainActivity::class.java)
-        startActivity(intent)
+        val move = Intent(this@LoginActivity,MainActivity::class.java)
+        startActivity(move)
         finish()
+
+       /* val intent = Intent(getContext(), IsActive::class.java)
+        startActivity(intent)
+        getActivity().finish() */
+
     }
 
     companion object{

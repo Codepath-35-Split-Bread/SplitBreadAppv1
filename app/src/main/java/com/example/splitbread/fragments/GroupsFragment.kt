@@ -1,4 +1,4 @@
-package com.example.splitbread
+package com.example.splitbread.fragments
 
 import android.os.Bundle
 import android.util.Log
@@ -8,12 +8,15 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.splitbread.GroupFragAdapter
+import com.example.splitbread.Groups
+import com.example.splitbread.R
 import com.parse.FindCallback
 import com.parse.ParseException
 import com.parse.ParseQuery
 import com.parse.ParseUser
 
-class FriendsFragment : Fragment() {
+class GroupsFragment : Fragment() {
 
     lateinit var groupsRecyclerView: RecyclerView
 
@@ -44,13 +47,14 @@ class FriendsFragment : Fragment() {
     }
 
     open fun queryGroups() {
-
+        // TODO: Add Description and Image
         // Specify which class to query
         val query: ParseQuery<Groups> = ParseQuery.getQuery(Groups::class.java)
 
         query.include(Groups.KEY_USER)
         query.whereEqualTo(Groups.KEY_USER, ParseUser.getCurrentUser())
         query.addDescendingOrder("createdAt")
+
         query.findInBackground(object : FindCallback<Groups> {
             override fun done(groups: MutableList<Groups>?, e: ParseException?) {
                 if (e != null) {
@@ -59,7 +63,8 @@ class FriendsFragment : Fragment() {
                 } else {
                     if (groups != null) {
                         for (group in groups) {
-                            Log.i(TAG, "Group Name: " + group.getGroupName()
+                            Log.i(
+                                TAG, "Group Name: " + group.getGroupName()
                             )
                         }
 

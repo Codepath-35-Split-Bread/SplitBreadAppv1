@@ -8,11 +8,10 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class GroupFragAdapter(val context: Context, val groups: List<Groups>) :
-    RecyclerView.Adapter<GroupFragAdapter.ViewHolder>(){
+class GroupFragAdapter(val context: Context, val groups: MutableList<Groups>) : RecyclerView.Adapter<GroupFragAdapter.ViewHolder>(){
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): GroupFragAdapter.ViewHolder {
 
-        val view = LayoutInflater.from(context).inflate(R.layout.fragment_groups, parent, false)
+        val view = LayoutInflater.from(context).inflate(R.layout.item_groups, parent, false)
         return ViewHolder(view)
     }
 
@@ -25,19 +24,35 @@ class GroupFragAdapter(val context: Context, val groups: List<Groups>) :
         return groups.size
     }
 
-    class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val ivProfile = itemView.findViewById<ImageView>(R.id.ivProfile)
-        val tvGroupName = itemView.findViewById<TextView>(R.id.tvGroupName)
-        val tvGroupBalance = itemView.findViewById<TextView>(R.id.tvBalance)
+    // Clean all elements of the recycler
+    fun clear() {
+        groups.clear()
+        notifyDataSetChanged()
+    }
 
-        /*   init {
-               groupstextview = itemView.findViewById(R.id.groupstextView)
-           } */
+    // Add a list of items -- change to type used
+    fun addAll(groupList: List<Groups>) {
+        groups.addAll(groupList)
+        notifyDataSetChanged()
+    }
+
+
+    class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        val tvGroupName: TextView
+        val ivProfile: ImageView
+        val tvBalance: TextView
+
+        init{
+            tvGroupName = itemView.findViewById(R.id.tvGroupName)
+            ivProfile = itemView.findViewById(R.id.ivProfile)
+            tvBalance = itemView.findViewById(R.id.tvBalance)
+        }
 
         fun bind(group: Groups){
+            tvBalance.text = group.getExpense().toString()
             tvGroupName.text = group.getGroupName()
-            tvGroupBalance.text = group.getExpense().toString()
 
+            /* Glide.with(itemView.context).load(group.getImage()?.url).into(ivImage) */
         }
     }
 }

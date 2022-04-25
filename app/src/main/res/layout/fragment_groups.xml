@@ -46,7 +46,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tvStartGroup" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/groupsrecyclerView"
+        android:id="@+id/groupsRecyclerView"
         android:layout_width="409dp"
         android:layout_height="596dp"
         app:layout_constraintBottom_toBottomOf="parent"

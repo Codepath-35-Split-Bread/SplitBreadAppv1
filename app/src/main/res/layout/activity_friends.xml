@@ -19,7 +19,7 @@
         app:layout_constraintTop_toBottomOf="@+id/searchView" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/FriendsrecyclerView"
+        android:id="@+id/FriendsRecyclerView"
         android:layout_width="413dp"
         android:layout_height="563dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -30,16 +30,17 @@
         android:id="@+id/tvFriendsOwe"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="144dp"
         android:layout_marginTop="2dp"
         android:layout_marginBottom="5dp"
         android:text="You owe: "
         android:textColor="@color/purple_700"
         android:textSize="15sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/FriendsrecyclerView"
+        app:layout_constraintBottom_toTopOf="@+id/FriendsRecyclerView"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvFriendstotal"
-        tools:layout_editor_absoluteX="144dp"
-        />
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/addFriends"
@@ -78,7 +79,7 @@
         android:text=" amount"
         android:layout_marginTop="2dp"
         android:layout_marginBottom="5dp"
-        app:layout_constraintBottom_toTopOf="@+id/FriendsrecyclerView"
+        app:layout_constraintBottom_toTopOf="@+id/FriendsRecyclerView"
         app:layout_constraintStart_toEndOf="@+id/tvFriendsOwe"
         app:layout_constraintTop_toBottomOf="@+id/tvFriendstotal"
         app:layout_constraintVertical_bias="0.423" />
