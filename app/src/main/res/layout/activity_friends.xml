@@ -16,7 +16,7 @@
         android:textColor="@color/purple_700"
         android:layout_marginTop="3dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/searchView" />
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/FriendsRecyclerView"
@@ -30,17 +30,14 @@
         android:id="@+id/tvFriendsOwe"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="144dp"
+        android:layout_marginStart="2dp"
         android:layout_marginTop="2dp"
-        android:layout_marginBottom="5dp"
         android:text="You owe: "
         android:textColor="@color/purple_700"
         android:textSize="15sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/FriendsRecyclerView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvFriendstotal"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintStart_toStartOf="@id/tvFriendstotal"
+        app:layout_constraintTop_toBottomOf="@+id/tvFriendstotal" />
 
     <Button
         android:id="@+id/addFriends"
@@ -53,35 +50,30 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <SearchView
-        android:id="@+id/searchView"
-        android:layout_width="200dp"
-        android:layout_height="53dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tvFriendstotal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Total balance"
-        android:textStyle="bold"
+        android:layout_marginTop="28dp"
+        android:text="Total Balance"
+        android:textColor="@color/black"
         android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvFriends" />
 
     <TextView
-        android:id="@+id/tvFriendsTotal"
+        android:id="@+id/tvFriendsDebt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:text=" amount"
+        android:layout_marginStart="4dp"
         android:layout_marginTop="2dp"
         android:layout_marginBottom="5dp"
-        app:layout_constraintBottom_toTopOf="@+id/FriendsRecyclerView"
+        android:text=" amount"
         app:layout_constraintStart_toEndOf="@+id/tvFriendsOwe"
-        app:layout_constraintTop_toBottomOf="@+id/tvFriendstotal"
-        app:layout_constraintVertical_bias="0.423" />
+        app:layout_constraintTop_toBottomOf="@+id/tvFriendstotal" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

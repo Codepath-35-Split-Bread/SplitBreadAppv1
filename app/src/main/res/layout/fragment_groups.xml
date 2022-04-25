@@ -10,10 +10,11 @@
         android:id="@+id/tvGroup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="3dp"
+        android:textColor="@color/purple_700"
         android:text="Groups"
-        android:textSize="20sp"
+        android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -31,24 +32,25 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
+    <TextView
         android:id="@+id/tvTotalBalance"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="33dp"
-        android:ems="10"
-        android:inputType="textPersonName"
+        android:layout_marginTop="28dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
         android:text="Total Balance"
         app:layout_constraintBottom_toTopOf="@+id/tvOwe"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.547"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvStartGroup" />
+        app:layout_constraintTop_toBottomOf="@+id/tvGroup" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/groupsRecyclerView"
-        android:layout_width="409dp"
-        android:layout_height="596dp"
+        android:layout_width="413dp"
+        android:layout_height="563dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -57,25 +59,35 @@
         android:id="@+id/tvOwe"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
-        android:text="You owe"
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="2dp"
+        android:text="You owe: "
         android:textColor="@color/purple_700"
         android:textSize="15sp"
         android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tvTotalBalance"
+        app:layout_constraintTop_toBottomOf="@+id/tvTotalBalance" />
+
+    <Button
+        android:id="@+id/addFriends"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="Start a Group"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.31"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/tvTotalBalance" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tvDebt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="45dp"
-        android:text="amount"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.031"
-        app:layout_constraintStart_toEndOf="@+id/tvOwe"
-        app:layout_constraintTop_toTopOf="@+id/tvTotalBalance" />
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="5dp"
+        android:text=" amount"
+        app:layout_constraintStart_toEndOf="@id/tvOwe"
+        app:layout_constraintTop_toBottomOf="@+id/tvTotalBalance" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
