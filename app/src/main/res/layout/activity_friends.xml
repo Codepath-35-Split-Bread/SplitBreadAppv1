@@ -18,13 +18,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/FriendsRecyclerView"
-        android:layout_width="413dp"
-        android:layout_height="563dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/tvFriendsOwe"
@@ -75,5 +68,20 @@
         android:text=" amount"
         app:layout_constraintStart_toEndOf="@+id/tvFriendsOwe"
         app:layout_constraintTop_toBottomOf="@+id/tvFriendstotal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvFriendsOwe">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/FriendsRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constrainedHeight="true"
+            app:layout_constraintVertical_bias="1.0" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

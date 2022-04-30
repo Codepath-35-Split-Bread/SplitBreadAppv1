@@ -5,6 +5,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
+import com.example.splitbread.fragments.AddFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.example.splitbread.fragments.GroupsFragment
 import com.example.splitbread.fragments.FriendsFragment
@@ -35,7 +36,7 @@ class MainActivity : AppCompatActivity() {
                     fragmentToShow = FriendsFragment()
                }
                 R.id.add -> {
-                    Toast.makeText(this,"Add Screen",Toast.LENGTH_SHORT).show()
+                    fragmentToShow = AddFragment()
                 }
                 R.id.activity -> {
                     Toast.makeText(this,"Activity Screen",Toast.LENGTH_SHORT).show()

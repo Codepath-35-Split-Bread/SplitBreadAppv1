@@ -1,25 +1,13 @@
 package com.example.splitbread
 
 import android.content.Intent
-import android.graphics.BitmapFactory
-import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Environment
-import android.provider.MediaStore
 import android.util.Log
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
-import android.widget.ImageView
 import android.widget.Toast
-import androidx.core.content.FileProvider
-import com.parse.ParseFile
 import com.parse.ParseUser
-import java.io.File
-import java.util.*
 import kotlin.collections.ArrayList
 
 class StartGroupActivity : AppCompatActivity() {
@@ -40,26 +28,31 @@ class StartGroupActivity : AppCompatActivity() {
         ): View? {*/
         //return inflater.inflate(R.layout.activity_start_group, container, false)
 
-        findViewById<ImageView>(R.id.creategroupbutton).setOnClickListener {
+        findViewById<Button>(R.id.creategroupbutton).setOnClickListener {
 
             val groupName = findViewById<EditText>(R.id.groupnameinput).text.toString()
+            val groupMember = findViewById<EditText>(R.id.memberinput).text.toString()
+            val user = ParseUser.getCurrentUser()
 
             // TODO: add members array
 
-            createGroup(groupName)
+            createGroup(groupName, groupMember, user)
         }
     }
 
 
 
-    fun createGroup(groupName: String) {
+    fun createGroup(groupName: String, groupMember: String, user: ParseUser) {
         val group = Groups()
 
         group.setGroupName(groupName)
+        group.setGroupMember1(groupMember)
+        group.setUser(user)
+
         group.saveInBackground { exception ->
             if (exception != null) {
                 Log.e(TAG, "Error while saving")
-                exception.printStackTrace()
+                exception.printStackTrace(System.out)
                 Toast.makeText(this, "Error saving", Toast.LENGTH_SHORT).show()
             } else {
                 Log.i(TAG, "Successfully saved")

@@ -17,13 +17,17 @@ class AddExpenseActivity : AppCompatActivity() {
             val description = findViewById<EditText>(R.id.expense_description).text.toString()
             val value = findViewById<EditText>(R.id.expense_amount).toString()
             val amount = value.toInt()
+            val group = Groups()
+            group.setDescription(description)
+            group.setExpense(amount)
 
-            addExpense(description, amount)
-        }
-
-        findViewById<Button>(R.id.canceladdExpense).setOnClickListener{
             goToMainActivity()
+
         }
+
+/*        findViewById<Button>(R.id.canceladdExpense).setOnClickListener{
+            goToMainActivity()
+        }*/
     }
 
     // add expense for friends??

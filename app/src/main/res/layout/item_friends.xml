@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
 
     <ImageView
@@ -23,6 +23,8 @@
         android:text="TextView"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/black"
+        android:textSize="20sp"
         app:layout_constraintStart_toEndOf="@id/ivFriendsProfile"
         android:layout_marginStart="5dp"
         android:layout_marginTop="5dp"
@@ -37,6 +39,8 @@
         app:layout_constraintTop_toBottomOf="@id/tvFriendsName"
         app:layout_constraintStart_toEndOf="@id/ivFriendsProfile"
         app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/black"
+        android:textSize="15sp"
         android:text="TextView"
         android:layout_marginStart="5dp"
         android:layout_marginTop="10dp"

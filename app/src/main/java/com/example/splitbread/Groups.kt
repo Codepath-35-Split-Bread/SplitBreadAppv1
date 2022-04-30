@@ -49,8 +49,16 @@ class Groups : ParseObject() {
         return getJSONArray(KEY_MEMBERS)
     }
 
-    fun setMembers(Members: JSONArray){
+    fun setMembers(Members: String){
         put(KEY_DESCRIPTION, Members)
+    }
+
+    fun getGroupMember1() : String? {
+        return getString(KEY_GROUP_MEMBER1)
+    }
+
+    fun setGroupMember1(GroupMember: String){
+        put(KEY_GROUP_MEMBER1, GroupMember)
     }
 
     companion object{
@@ -59,5 +67,6 @@ class Groups : ParseObject() {
         const val KEY_DESCRIPTION = "Description"
         const val KEY_EXPENSE = "Expense"
         const val KEY_MEMBERS = "Members"
+        const val KEY_GROUP_MEMBER1 = "GroupMember1"
     }
 }

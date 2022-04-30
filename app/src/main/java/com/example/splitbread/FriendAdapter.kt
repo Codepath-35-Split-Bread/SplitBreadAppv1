@@ -9,9 +9,9 @@ import androidx.recyclerview.widget.RecyclerView
 
 class FriendAdapter(val context: Context, val friends: List<Friends>)
     : RecyclerView.Adapter<FriendAdapter.ViewHolder>() {
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FriendAdapter.ViewHolder {
 
-        val view = LayoutInflater.from(context).inflate(R.layout.groups, parent, false)
+        val view = LayoutInflater.from(context).inflate(R.layout.friends, parent, false)
         return FriendAdapter.ViewHolder(view)
     }
 
@@ -34,7 +34,7 @@ class FriendAdapter(val context: Context, val friends: List<Friends>)
         }
 
         fun bind(friend: Friends){
-            friendstextView.text = friend.getUser()?.username
+            friendstextView.text = friend.getFriendsName()
         }
     }
 
