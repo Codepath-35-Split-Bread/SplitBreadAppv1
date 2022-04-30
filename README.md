@@ -115,9 +115,14 @@ SplitBread is the easiest way to share expenses with friends and family and stop
 
 <img src='SplitBread.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
+Updated GIF
+
+<img src='SplitBreadGIF29042022.gif' title='Video Walkthrough 2' width='' alt='Video Walkthrough' />
+
 ## Wireframes
 
 <img src="https://github.com/jonathanpearson876/SplitBreadApp/blob/main/AddImages/image0%20(1).jpeg" width=600>
+
 
 ### [BONUS] Digital Wireframes & Mockups
 <img src="https://github.com/jonathanpearson876/SplitBreadApp/blob/main/AddImages/SplitBread1.PNG" width=600>
